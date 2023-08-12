@@ -21,7 +21,7 @@ export const filterReducer = (state, action) => {
     case "LOW_STOCK":
       return {
         ...state,
-        lowStock: !action.lowStock,
+        lowStock: !state.lowStock,
       };
 
     default:
