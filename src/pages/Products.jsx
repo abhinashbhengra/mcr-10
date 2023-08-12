@@ -2,15 +2,17 @@ import React, { useContext } from "react";
 import { ProductsContext } from "../context/ProductsContext";
 import { FilterContext } from "../context/FilterContext";
 import { getFilteredData } from "../utils/getFilteredData";
+import { Filters } from "../components/Filters";
 
 export const Products = () => {
   const { allProducts } = useContext(ProductsContext);
   const { filterState } = useContext(FilterContext);
   const filteredData = getFilteredData(allProducts, filterState);
-  console.log(filteredData);
+
   return (
     <>
       <h1>Products Page</h1>
+      <Filters />
       <div>
         <div className="flex">
           <p>Image</p>
