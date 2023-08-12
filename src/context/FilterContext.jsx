@@ -8,6 +8,7 @@ export const FilterProvider = ({ children }) => {
     filterReducer,
     initialFilters
   );
+  console.log("context", filterState);
   return (
     <FilterContext.Provider value={{ filterState, filterDispatch }}>
       {children}

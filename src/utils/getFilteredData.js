@@ -2,12 +2,10 @@ export const getFilteredData = (products, filterState) => {
   const { categories, lowStock, sortBy } = filterState;
 
   const filteredByCategory = (products, categories) => {
-    if (categories.length < 1) {
+    if (categories === "All") {
       return products;
     }
-    return products.filter((product) => {
-      categories.includes(product.department);
-    });
+    return products.filter((prod) => prod.department === categories);
   };
 
   const departmentalFiltered = filteredByCategory(products, categories);

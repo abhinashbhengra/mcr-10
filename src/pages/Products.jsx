@@ -8,7 +8,7 @@ export const Products = () => {
   const { allProducts } = useContext(ProductsContext);
   const { filterState } = useContext(FilterContext);
   const filteredData = getFilteredData(allProducts, filterState);
-
+  console.log("filtered prod", filteredData);
   return (
     <>
       <h1>Products Page</h1>
