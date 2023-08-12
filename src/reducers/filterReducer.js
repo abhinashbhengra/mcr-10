@@ -1,7 +1,7 @@
 export const initialFilters = {
   categories: "All",
   lowStock: false,
-  sortBy: null,
+  sortBy: "Name",
 };
 
 export const filterReducer = (state, action) => {

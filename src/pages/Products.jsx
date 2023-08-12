@@ -11,7 +11,7 @@ export const Products = () => {
   console.log("filtered prod", filteredData);
   return (
     <>
-      <h1>Products Page</h1>
+      <h1>Products</h1>
       <Filters />
       <div>
         <div className="flex">
