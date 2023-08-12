@@ -13,9 +13,9 @@ export const getFilteredData = (products, filterState) => {
   const filteredBySort = (products, sortBy) => {
     if (!sortBy) {
       return products;
-    } else if (sortBy === "NAME") {
+    } else if (sortBy === "Name") {
       return products.sort((a, b) => a.name - b.name);
-    } else if (sortBy === "PRICE") {
+    } else if (sortBy === "Price") {
       return products.sort((a, b) => a.price - b.price);
     } else {
       return products.sort((a, b) => a.stock - b.stock);
