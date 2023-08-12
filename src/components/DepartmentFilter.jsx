@@ -13,7 +13,6 @@ export const DepartmentFilter = ({ departments, filterDispatch }) => {
 
   return (
     <>
-      <h1>Department Filter</h1>
       <div>
         <select name="department" onChange={handleDepartment}>
           <option value="All">All Department</option>
