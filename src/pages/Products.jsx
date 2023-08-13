@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ProductsContext } from "../context/ProductsContext";
 import { FilterContext } from "../context/FilterContext";
 import { getFilteredData } from "../utils/getFilteredData";
@@ -13,6 +14,7 @@ export const Products = () => {
     <>
       <h1>Products</h1>
       <Filters />
+      <Link to="/add-product">New</Link>
       <div>
         <div className="flex">
           <p>Image</p>

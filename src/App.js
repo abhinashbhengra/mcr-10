@@ -3,6 +3,7 @@ import { Dashboard } from "./pages/Dashboard";
 import { Departments } from "./pages/Departments";
 import { Products } from "./pages/Products";
 import { Sidebar } from "./components/Sidebar";
+import { AddProduct, AddProductPage } from "./pages/AddProduct";
 function App() {
   return (
     <div className="flex min-h-screen">
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/departments" element={<Departments />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/add-product" element={<AddProductPage />} />
         </Routes>
       </div>
     </div>
