@@ -11,10 +11,15 @@ export const Products = () => {
   const filteredData = getFilteredData(allProducts, filterState);
   // console.log("filtered prod", filteredData);
   return (
-    <>
-      <h1>Products</h1>
-      <Filters />
-      <Link to="/add-product">New</Link>
+    <div className="p-9">
+      <div className="flex justify-between mt-6">
+        <h1 className="text-xl font-bold">Products</h1>
+        <Filters />
+        <Link to="/add-product" className="mt-2 bg-blue-500 p-2 text-white">
+          New
+        </Link>
+      </div>
+
       <div>
         <div className="flex">
           <p>Image</p>
@@ -39,6 +44,6 @@ export const Products = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };

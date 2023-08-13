@@ -21,7 +21,11 @@ export const DepartmentFilter = ({ departments, filterDispatch }) => {
   return (
     <>
       <div>
-        <select name="department" onChange={handleDepartment}>
+        <select
+          name="department"
+          onChange={handleDepartment}
+          className="border"
+        >
           <option value="All" selected={"All" === filterState.categories}>
             All Department
           </option>

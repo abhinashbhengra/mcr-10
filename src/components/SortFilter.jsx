@@ -4,7 +4,7 @@ export const SortFilter = ({ sortBy, filterDispatch }) => {
   };
   return (
     <div>
-      <select name="sort" onChange={handleSortFilter}>
+      <select name="sort" onChange={handleSortFilter} className="border">
         <option value="Name">Name</option>
         <option value="Price">Price</option>
         <option value="Stock">Stock</option>
